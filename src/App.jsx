@@ -4,14 +4,17 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function ListItem(props) {
-    return <li>{props.animalVar}</li>;
+    console.log(props);
+
+    return <li>{props.a}</li>;
 }
 
 function List(props) {
+    console.log(props);
     return (
         <ul>
             {props.animalList.map(animal => {
-                return <ListItem key={animal} animalVar={animal} />;
+                return <ListItem key={animal} a="1" animalVar={animal} />;
             })}
         </ul>
     )
