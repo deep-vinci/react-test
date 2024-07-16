@@ -6,7 +6,7 @@ import "./App.css";
 function ListItem(props) {
     console.log(props);
 
-    return <li>{props.a}</li>;
+    return <li>{props.animalVar}</li>;
 }
 
 function List(props) {
@@ -25,7 +25,7 @@ function App() {
 
     return (
         <div>
-            <h1>Animals: </h1>
+            <h1>Animals</h1>
             <List animalList={animals} />
         </div>
     );
