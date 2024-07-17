@@ -8,9 +8,9 @@ import "./index.css";
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
         <App />
-        <Button text="Click Me!" color="blue" fontSize={12} />
-        <Button text="Don't Click Me!" color="" fontSize={12} />
-        <Button text="Click Me!" color="blue" fontSize={20} />
+        <Button />
+        <Button text="Don't Click Me!" />
+        <Button />
         <Greeting />
     </React.StrictMode>
 );
