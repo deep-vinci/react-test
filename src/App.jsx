@@ -3,18 +3,15 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
-function ListItem(props) {
-    console.log(props);
-
-    return <li>{props.animalVar}</li>;
-}
-
 function List(props) {
-    console.log(props);
+    if(!props.animalList) {
+        return <div>Loading...</div>;
+    }
+    
     return (
         <ul>
             {props.animalList.map(animal => {
-                return <ListItem key={animal} a="1" animalVar={animal} />;
+                return <li key={animal} a="1" animalVar={animal}>{animal}</li>;
             })}
         </ul>
     )
