@@ -1,11 +1,11 @@
-function Button({ text = 'Click me!', color = 'blue', fontSize = 12}) {
+function Button({ text = 'Click me!', color = 'blue', fontSize = 12, handleClick}) {
     const buttonStyle = {
         color: color,
         fontSize: fontSize + "px"
     };
 
     return (
-        <button style={buttonStyle}>{text}</button>
+        <button onClick={handleClick} style={buttonStyle}>{text}</button>
     );
 }
 
