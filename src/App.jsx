@@ -7,6 +7,8 @@ function List(props) {
     if(!props.animalList) {
         return <div>Loading...</div>;
     }
+
+    
     
     return (
         <ul>
